@@ -1,5 +1,6 @@
 #request
+uint8 ros2_psuedo
 ---
 #response
-WaypointV2[] mission
-bool result
+WaypointV2[] mission 
+bool result 

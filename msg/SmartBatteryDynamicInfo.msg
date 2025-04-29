@@ -1,10 +1,10 @@
-uint8  batteryIndex
-int32  currentVoltage          # uint:mV
-int32  currentElectric         # uint:mA
-uint32 fullCapacity            # uint:mAh
-uint32 remainedCapacity        # uint:mAh
-int16  batteryTemperature      # uint:0.1℃
-uint8  cellCount
-uint8  batteryCapacityPercent  # uint:%
-SmartBatteryState batteryState
-uint8  SOP                     # Relative power percentage
+uint8 battery_index 
+int32 current_voltage # uint:mV
+int32 current_electric # uint:mA
+uint32 full_capacity # uint:mAh
+uint32 remained_capacity # uint:mAh
+int16 battery_temperature # uint:0.1℃
+uint8 cell_count 
+uint8 battery_capacity_percent # uint:%
+SmartBatteryState battery_state 
+uint8 s_o_p # Relative power percentage

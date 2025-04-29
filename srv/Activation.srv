@@ -1,6 +1,7 @@
+uint8 ros2_psuedo
 ---
-bool result
+bool result 
 # for debugging usage
-uint8 cmd_set
-uint8 cmd_id
-uint32 ack_data
+uint8 cmd_set 
+uint8 cmd_id 
+uint32 ack_data 

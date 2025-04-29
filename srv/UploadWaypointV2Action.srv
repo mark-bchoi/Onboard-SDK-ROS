@@ -1,5 +1,6 @@
 #request
 # WaypointV2Action[] actions
+uint8 ros2_psuedo
 ---
 #response
-bool result
+bool result 

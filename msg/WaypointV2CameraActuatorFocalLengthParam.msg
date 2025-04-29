@@ -3,6 +3,6 @@
 # ``DJICamera_DJICameraOpticalZoomSpec_minFocalLength``] and must be a multiple of
 # ``DJICamera_DJICameraOpticalZoomSpec_focalLengthStep``.
 #  Only support by those camera ``DJICamera_CameraSettings_isOpticalZoomSupported`` return ``TRUE``.
-  uint16 focalLength
+uint16 focal_length 
 
-  uint8 retryTimes = 1
+uint8 RETRYTIMES = 1

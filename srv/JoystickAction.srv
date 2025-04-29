@@ -1,5 +1,5 @@
 #request
-JoystickParams joystickCommand
+JoystickParams joystick_command 
 ---
 #response
-bool result
+bool result 

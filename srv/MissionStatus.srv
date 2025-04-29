@@ -1,3 +1,4 @@
+uint16 altitude 
 ---
-uint8 waypoint_mission_count
-uint8 hotpoint_mission_count
+uint8 waypoint_mission_count 
+uint8 hotpoint_mission_count 

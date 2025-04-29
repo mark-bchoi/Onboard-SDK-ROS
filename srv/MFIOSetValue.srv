@@ -1,3 +1,4 @@
-uint8 channel   # 0-7
-uint32 init_on_time_us    # on time for pwm duty cycle in micro-seconds
+uint8 channel # 0-7
+uint32 init_on_time_us # on time for pwm duty cycle in micro-seconds
 ---
+uint8 ros2_psuedo

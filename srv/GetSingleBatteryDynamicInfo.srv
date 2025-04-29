@@ -1,8 +1,8 @@
 #request
-uint8 first_smart_battery = 1
-uint8 second_smart_battery = 2
+uint8 FIRST_SMART_BATTERY = 1
+uint8 SECOND_SMART_BATTERY = 2
 
-uint8 batteryIndex
+uint8 battery_index 
 ---
 #response
-SmartBatteryDynamicInfo smartBatteryDynamicInfo
+SmartBatteryDynamicInfo smart_battery_dynamic_info 

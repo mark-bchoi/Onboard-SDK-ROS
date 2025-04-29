@@ -4,4 +4,4 @@ uint8 exposure_mode #see enum class ExposureMode in common_type.h
 uint8 iso_data #see enum class ISO in common_type.h
 ---
 #response
-bool result
+bool result 

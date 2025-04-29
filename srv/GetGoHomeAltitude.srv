@@ -1,5 +1,6 @@
 #request
+uint8 ros2_psuedo
 ---
 #response
-bool result
-uint16 altitude
+bool result 
+uint16 altitude 

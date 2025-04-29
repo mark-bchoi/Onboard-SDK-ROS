@@ -1,8 +1,8 @@
 #contant for actionAssociatedType
-uint8 DJIWaypointV2TriggerAssociatedTimingTypeSimultaneously = 1  # The trigger starts simultaneously with the trigger that is associated.
-uint8 DJIWaypointV2TriggerAssociatedTimingTypeAfterFinised = 2    # The trigger starts after the trigger associated has finished.
-uint8 DJIWaypointV2TriggerAssociatedTimingTypeUnknown = 255       # Unkown timing type.
+uint8 DJIWAYPOINTV2TRIGGERASSOCIATEDTIMINGTYPESIMULTANEOUSLY = 1 # The trigger starts simultaneously with the trigger that is associated.
+uint8 DJIWAYPOINTV2TRIGGERASSOCIATEDTIMINGTYPEAFTERFINISED = 2 # The trigger starts after the trigger associated has finished.
+uint8 DJIWAYPOINTV2TRIGGERASSOCIATEDTIMINGTYPEUNKNOWN = 255 # Unkown timing type.
 
-uint8 actionAssociatedType  # The type of assciate trigger.
-uint8 waitingTime           # Waiting time in seconds after ActionTrigger starts.
-uint16 actionIdAssociated # Associated action ID.
+uint8 action_associated_type # The type of assciate trigger.
+uint8 waiting_time # Waiting time in seconds after ActionTrigger starts.
+uint16 action_id_associated # Associated action ID.

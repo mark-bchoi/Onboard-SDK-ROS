@@ -1,8 +1,8 @@
 #request
-WaypointV2InitSetting waypointV2InitSettings
-uint16 polygonNum
-float32 radius
-uint16 actionNum
+WaypointV2InitSetting waypoint_v_2_init_settings 
+uint16 polygon_num 
+float32 radius 
+uint16 action_num 
 
 ---
-bool result
+bool result 

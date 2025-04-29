@@ -1,5 +1,5 @@
 # the time stamp of getting this data in the ROS system
-time stamp
+builtin_interfaces/Time stamp 
 
 # the time stamp from GPS/RTK
-string UTCTimeData
+string u_t_c_time_data 

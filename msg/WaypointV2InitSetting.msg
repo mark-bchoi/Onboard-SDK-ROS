@@ -3,31 +3,31 @@
 # is used in both a sending and a receiving API.
 
 #constant for finishedAction
-uint8 DJIWaypointV2MissionFinishedNoAction = 0  # No further action will be taken.
-                                                # The aircraft can be controlled by the remote controller.
-uint8 DJIWaypointV2MissionFinishedGoHome = 1    # Goes home when the mission is finished. The aircraft will
-                                                # land directly if it is within 20 meters away from the home point.
-uint8 DJIWaypointV2MissionFinishedAutoLanding = 2  # The aircraft will land automatically at the last waypoint.
-uint8 DJIWaypointV2MissionFinishedGoToFirstWaypoint = 3  # The aircraft will go back to the first waypoint and hover.
-uint8 DJIWaypointV2MissionFinishedContinueUntilStop = 4  #  When the aircraft reaches its final waypoint, it will hover without ending the
-                                                         # mission. The joystick  can still be used to pull the aircraft back along its
-                                                         # previous waypoints. The only way this mission  can end is if stopMission is
-                                                         # called
+uint8 DJIWAYPOINTV2MISSIONFINISHEDNOACTION = 0 # No further action will be taken.
+# The aircraft can be controlled by the remote controller.
+uint8 DJIWAYPOINTV2MISSIONFINISHEDGOHOME = 1 # Goes home when the mission is finished. The aircraft will
+# land directly if it is within 20 meters away from the home point.
+uint8 DJIWAYPOINTV2MISSIONFINISHEDAUTOLANDING = 2 # The aircraft will land automatically at the last waypoint.
+uint8 DJIWAYPOINTV2MISSIONFINISHEDGOTOFIRSTWAYPOINT = 3 # The aircraft will go back to the first waypoint and hover.
+uint8 DJIWAYPOINTV2MISSIONFINISHEDCONTINUEUNTILSTOP = 4 # When the aircraft reaches its final waypoint, it will hover without ending the
+# mission. The joystick  can still be used to pull the aircraft back along its
+# previous waypoints. The only way this mission  can end is if stopMission is
+# called
 
 #constant for gotoFirstWaypintMode
-uint8 DJIWaypointV2MissionGotoFirstWaypointModeSafely = 0 # Go to the waypoint safely. The aircraft will rise to the same altitude of the
-                                                          # waypoint if the current  altitude is lower then the waypoint altitude. It then
-                                                          # goes to the waypoint coordinate from the current  altitude, and proceeds to the
-                                                          # altitude of the waypoint.
-uint8 DJIWaypointV2MissionGotoFirstWaypointModePointToPoint = 1 # Go to the waypoint from the current aircraft point to the waypoint directly.
+uint8 DJIWAYPOINTV2MISSIONGOTOFIRSTWAYPOINTMODESAFELY = 0 # Go to the waypoint safely. The aircraft will rise to the same altitude of the
+# waypoint if the current  altitude is lower then the waypoint altitude. It then
+# goes to the waypoint coordinate from the current  altitude, and proceeds to the
+# altitude of the waypoint.
+uint8 DJIWAYPOINTV2MISSIONGOTOFIRSTWAYPOINTMODEPOINTTOPOINT = 1 # Go to the waypoint from the current aircraft point to the waypoint directly.
 
 
-uint32 missionID    # The Mission ID. Use to distinguish　different mission
-uint16 missTotalLen # The Mission waypoint total length, could not exceed 65535
-uint8 repeatTimes   # Mission execution can be repeated more than once. A value of 0 means the mission
-                    # only executes once, and does not repeat. A value of 1 means the mission will
-                    # execute a total of two times.
-uint8 finishedAction # Action the aircraft will take when the waypoint mission is complete.
+uint32 mission_i_d # The Mission ID. Use to distinguish different mission
+uint16 miss_total_len # The Mission waypoint total length, could not exceed 65535
+uint8 repeat_times # Mission execution can be repeated more than once. A value of 0 means the mission
+# only executes once, and does not repeat. A value of 1 means the mission will
+# execute a total of two times.
+uint8 finished_action # Action the aircraft will take when the waypoint mission is complete.
 
 # While the aircraft is travelling between waypoints, you can offset its speed by
 # using the throttle joystick  on the remote controller. `maxFlightSpeed` is this
@@ -41,7 +41,7 @@ uint8 finishedAction # Action the aircraft will take when the waypoint mission i
 # reaches the  first waypoint, it will then hover in place until a positive speed
 # is  applied. `maxFlightSpeed` has a range of [2,15] m/s.
 # unit: m/s
-float32 maxFlightSpeed
+float32 max_flight_speed 
 
 # The base automatic speed of the aircraft as it moves between waypoints with
 # range [-15, 15] m/s. The  aircraft's actual speed is a combination of the base
@@ -53,12 +53,12 @@ float32 maxFlightSpeed
 # will hover in place until the speed is made positive by  the remote controller
 # joystick.
 # unit: m/s
-float32 autoFlightSpeed
+float32 auto_flight_speed 
 
-uint8 exitMissionOnRCSignalLost    # Determines whether the mission should stop when connection between the  aircraft
-                                   # and remote controller is lost. Default is `NO`.
+uint8 exit_mission_on_r_c_signal_lost # Determines whether the mission should stop when connection between the aircraft
+# and remote controller is lost. Default is `NO`.
 
-uint8 gotoFirstWaypointMode        # Defines how the aircraft will go to the first waypoint from its current
-                                   # position. Default  is ``DJIWaypointV2MissionV2_DJIWaypointV2MissionGotoWaypointMode_Safely``.
+uint8 goto_first_waypoint_mode # Defines how the aircraft will go to the first waypoint from its current
+# position. Default  is ``DJIWaypointV2MissionV2_DJIWaypointV2MissionGotoWaypointMode_Safely``.
 
-WaypointV2[] mission
+WaypointV2[] mission 

@@ -1,7 +1,7 @@
 #request
 #contant for horizontal_mode
 # Set the control-mode to control pitch & roll angle of the vehicle.
-# Need to be referenced to either the ground or body frame 
+# Need to be referenced to either the ground or body frame
 # by HorizontalCoordinate setting.
 # Limit: 35 degree
 uint8 HORIZONTAL_ANGLE = 0
@@ -56,15 +56,15 @@ uint8 STABLE_ENABLE = 1
 # Only when GPS signal is good (health_flag >=3)，or when AdvancedSensing
 # system is working properly with Autopilot，horizontal velocity control
 # （HORIZONTAL_VELOCITY）related control modes can be used.
-uint8 horizontal_mode
+uint8 horizontal_mode 
 
 # We suggest developers do not use VERTICAL_POSITION control mode indoor
 # when your UAV flight height is larger than 3 meters.
 # This is because in indoor environments, barometer can be inaccurate, and
 # the vertical controller may fail to keep the height of the UAV.
-uint8 vertical_mode
-uint8 yaw_mode
-uint8 horizontal_coordinate
+uint8 vertical_mode 
+uint8 yaw_mode 
+uint8 horizontal_coordinate 
 
 # Only works in Horizontal velocity control mode
 # In velocity stable mode, drone will brake and hover at one position once
@@ -73,7 +73,7 @@ uint8 horizontal_coordinate
 # In velocity non-stable mode, drone will follow the velocity command and
 # doesn’t hover when the command is zero.
 # That’s to say drone will drift with the wind.
-uint8 stable_mode
+uint8 stable_mode 
 ---
 #response
-bool result
+bool result 

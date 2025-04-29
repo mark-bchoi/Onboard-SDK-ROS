@@ -4,4 +4,4 @@ uint8 exposure_mode #see enum class ExposureMode in common_type.h
 uint8 shutter_speed #see enum class ShutterSpeed in common_type.h
 ---
 #response
-bool result
+bool result 
